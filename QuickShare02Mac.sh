@@ -2,7 +2,7 @@
 ##
 ## http://sonof8bits.com/
 ##
-## QuickShare 0.2
+## QuickShare 0.2 for Mac
 ## A quick and easy way to share files with friends. For example in chat rooms,
 ## or social media.
 ##
