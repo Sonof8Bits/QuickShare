@@ -8,7 +8,7 @@
 ##
 ## Requirements:
 ## You enjoy using the command line.
-## A Mac OSX computer. (Linux support in the next version.)
+## A Mac OSX computer.
 ## - In .profile make an alias for QuickShare:
 ##   alias quickshare=~/script/QuickShare.sh
 ##   (Or don't, but typing the path to a script makes QuickShare a little
