@@ -27,8 +27,11 @@ A Linux/Unix server:
 #### Usage:
 ##### 1 In your command line prompt:
   quickshare /some/where/file-to.share
+  
   For example:
+  
   quickshare /home/me/pictures/funny-neko-nyan.jpg
 ##### 2 Done! The link is now copied to your clipboard.
   For example:
+  
   https://example.com/quickshare/funny-neko-nyan.jpg
