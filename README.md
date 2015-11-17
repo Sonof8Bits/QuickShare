@@ -4,8 +4,8 @@ or social media.
 
 
 #### Requirements:
-
 You enjoy using the command line.
+
 A Mac OSX computer. (Linux support in the next version.)
 - In .profile make an alias for QuickShare:
   alias quickshare=~/script/QuickShare.sh
