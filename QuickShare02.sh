@@ -2,7 +2,7 @@
 
 ## QuickShare 0.2
 ## A quick and easy way to share files with friends. For example in chat rooms,
-## on social media, or a screencap for showing off your desktop.
+## or social media.
 ##
 ## Requirements:
 ## You enjoy using the command line.
@@ -29,7 +29,7 @@
 ##   quickshare /some/where/file-to.share
 ##   For example:
 ##   quickshare /home/me/pictures/funny-neko-nyan.jpg
-## 2 Done! The link is now copied to your clipboard. Use CMD+V or context-menu -> paste.
+## 2 Done! The link is now copied to your clipboard.
 ##   For example:
 ##   https://example.com/quickshare/funny-neko-nyan.jpg
 
