@@ -4,9 +4,9 @@ or social media.
 
 
 #### Requirements:
-You enjoy using the command line.
-
-A computer running Mac OSX or Linux with xclip installed. (Linux support in the next version.)
+- You enjoy using the command line.
+- A computer running Mac OSX.
+- A computer running Linux with xclip installed.
 - In .profile make an alias for QuickShare:
   alias quickshare=~/script/QuickShare.sh
   (Or don't, but typing the path to a script makes QuickShare a little
