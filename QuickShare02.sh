@@ -1,5 +1,7 @@
 #!/bin/bash
-
+##
+## http://sonof8bits.com/
+##
 ## QuickShare 0.2
 ## A quick and easy way to share files with friends. For example in chat rooms,
 ## or social media.
