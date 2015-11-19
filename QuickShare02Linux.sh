@@ -63,7 +63,7 @@ scp -P $port "$1" $server:$root
 ## sets correct permissions for the quickshare/ folder, bye quits the SSH session.
 command="chmod -R 755 $root"
 bye="&& exit"
-ssh -p $port $server '$command' $bye
+ssh -p $port $server "$command*" $bye
 
 ## When done copying, put the url in your clipboard.
 echo $address/quickshare/`basename $1` | sed 's/\ /%20/g' | tr -d '\n' | xsel --clipboard --input
