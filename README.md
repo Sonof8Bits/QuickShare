@@ -35,3 +35,6 @@ A Linux/Unix server:
   For example:
   
   https://example.com/quickshare/funny-neko-nyan.jpg
+  
+##### New in 0.3:
+  Also works for sharing a folder.
