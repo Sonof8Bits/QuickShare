@@ -55,7 +55,7 @@ root=/var/www/quickshare/
 ## Script:
 ##
 ## Copy the file over to the server, the file being variable $1.
-scp -P $port "$1" $server:$root
+scp -P $port "$1" -r $server:$root
 
 ## Set the permission, else it won't work and the people opening your link will be
 ## greeted with a 403 error.
