@@ -34,7 +34,7 @@
 ## 2 Done! The link is now copied to your clipboard.
 ##   For example:
 ##   https://example.com/quickshare/funny-neko-nyan.jpg
-
+##
 
 ## Fill in your SSH portnumber here:
 port=22
@@ -51,22 +51,26 @@ address=https://example.com
 ## Fill in your web-server's folder path here:
 root=/var/www/quickshare/
 
-
 ## Script:
 ##
-## Copy the file over to the server, the file being variable $1.
-scp -P $port "$1" -r $server:$root
+## IFS so things won't screw up if a folder or file contains a space in the name.
+IFS='\'
+## Copy the file(s) over to the server, the file being variable $1.
+scp -P $port -r "$1" $server:$root/
 
 ## Set the permission, else it won't work and the people opening your link will be
 ## greeted with a 403 error.
 ## I've splitt the command up so it won't cause any errors; command
 ## sets correct permissions for the quickshare/ folder, bye quits the SSH session.
-command="chmod -R 755 $root"
+command1="sudo chmod -R 775 $root/*"
+command2="sudo chown www-data:www-data $root/*"
 bye="&& exit"
-ssh -p $port $server "$command*" $bye
+ssh -p $port $server $command1 $bye
+ssh -p $port $server $command2 $bye
 
 ## When done copying, put the url in your clipboard.
-echo $address/quickshare/`basename $1` | sed 's/\ /%20/g' | tr -d '\n' | pbcopy
+echo $address/`basename $1` | sed 's/\ /%20/g' | tr -d '\n' | pbcopy
+echo $address/`basename $1` | sed 's/\ /%20/g' | tr -d '\n'
 
 ## FIN
 exit
