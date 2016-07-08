@@ -31,6 +31,9 @@ A Linux/Unix server:
   For example:
   
   quickshare /home/me/pictures/funny-neko-nyan.jpg
+  
+  On Mac OSX you can also run this as a service. Open up Automator, select "Service", select  "Run Shell Script" from the variables, copy the QuickShare script and don't forget to set "Service receives selected" to "files or folders" and "in" to "Finder.app". Lastly, set "Pass input" to "as arguments". All done! Hit save to install the service. In System Preferences you can even make a shortcut for QuickShare! Since nothing was using ctrl+q I decided to use that.
+  
 ##### 2 Done! The link is now copied to your clipboard.
   For example:
   
